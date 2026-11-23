@@ -78,46 +78,90 @@
     <img src="Diagram.jpeg" alt="Arduino smart home">
   </section>
 
-  <section id="environment">
-    <h2>Environmental Impact Assessment</h2>
-    <ul>
-      <li><strong>Materials:</strong> The Arduino Uno is RoHS and WEEE compliant, limiting hazardous substances.
-      </li>
-      <li><strong>Energy Efficiency:</strong> The circuit draws minimal power (~50 mA at 5V), ideal for USB or
-        solar power.</li>
-      <li><strong>Reusability:</strong> All components are modular and reusable, reducing electronic waste.</li>
-      <li><strong>Packaging & Shipping:</strong> Ordering all components from a single supplier helps minimize
-        carbon footprint.</li>
-    </ul>
-  </section>
 
-  ## Comparative Analysis of Technologies & Sustainability
+<section id="environment">
+  <h2>Comparative Analysis of Technologies & Sustainability</h2>
 
-**Project: Arduino Smart Home Security and Monitoring System**
+  <p>
+    There are different ways to build a smart home security system.
+    We compared an Arduino sensor-based system with a camera-based
+    security system.
+  </p>
 
-There are different ways to build a smart home security system. For this project, we compared an Arduino sensor-based system with a camera-based security system.
+  <h3>Technology Comparison Table</h3>
 
-### Technology Comparison Table
+  <table style="width:100%; border-collapse:collapse; text-align:left;">
+    <thead>
+      <tr style="background-color:#2e7d32; color:white;">
+        <th style="border:1px solid #ccc; padding:12px;">Comparison</th>
+        <th style="border:1px solid #ccc; padding:12px;">Arduino with Ultrasonic and PIR Sensors</th>
+        <th style="border:1px solid #ccc; padding:12px;">Camera-Based Security System</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border:1px solid #ccc; padding:10px;">How It Works</td>
+        <td style="border:1px solid #ccc; padding:10px;">Uses sensors to detect movement and measure distance.</td>
+        <td style="border:1px solid #ccc; padding:10px;">Uses a camera to monitor an area and detect activity.</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #ccc; padding:10px;">Advantages</td>
+        <td style="border:1px solid #ccc; padding:10px;">Cheap, easy to build, uses less electricity, and protects privacy.</td>
+        <td style="border:1px solid #ccc; padding:10px;">Records video and provides more details about activity.</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #ccc; padding:10px;">Disadvantages</td>
+        <td style="border:1px solid #ccc; padding:10px;">Limited detection range and cannot identify people.</td>
+        <td style="border:1px solid #ccc; padding:10px;">More expensive and may require internet or storage.</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #ccc; padding:10px;">Sustainability</td>
+        <td style="border:1px solid #ccc; padding:10px;">Uses less electricity and has reusable components.</td>
+        <td style="border:1px solid #ccc; padding:10px;">Uses more electricity and may need extra electronic devices.</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #ccc; padding:10px;">Cost</td>
+        <td style="border:1px solid #ccc; padding:10px;">Low</td>
+        <td style="border:1px solid #ccc; padding:10px;">High</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #ccc; padding:10px;">Best Use</td>
+        <td style="border:1px solid #ccc; padding:10px;">Small rooms, entrances, and simple home security.</td>
+        <td style="border:1px solid #ccc; padding:10px;">Homes and buildings that need video monitoring.</td>
+      </tr>
+    </tbody>
+  </table>
 
-| Comparison | Option 1: Arduino with Ultrasonic and PIR Sensors | Option 2: Camera-Based Security System |
-|---|---|---|
-| **How it works** | Uses sensors to detect movement and measure distance. | Uses a camera to monitor an area and detect activity. |
-| **Advantages** | Low cost, easy to build, uses less electricity, and does not record people. | Can record video, provide more details, and help identify what caused an alert. |
-| **Disadvantages** | Cannot show who is moving, and sensors have limited detection ranges. | More expensive, uses more electricity, and may need internet or storage. |
-| **Sustainability** | Uses less energy and fewer electronic components. Parts can be reused in other projects. | Uses more energy and may require extra storage devices, but some equipment can be reused. |
-| **Cost** | Generally cheaper. | Generally more expensive. |
-| **Best Use** | Small rooms, entrances, and simple home security projects. | Homes or buildings that need video monitoring. |
+  <h3>Potential Design Problems and Solutions</h3>
 
-### Two Potential Design Problems and Solutions
+  <table style="width:100%; border-collapse:collapse; text-align:left;">
+    <thead>
+      <tr style="background-color:#2e7d32; color:white;">
+        <th style="border:1px solid #ccc; padding:12px;">Design Problem</th>
+        <th style="border:1px solid #ccc; padding:12px;">Possible Solution</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border:1px solid #ccc; padding:10px;">False Motion Detection</td>
+        <td style="border:1px solid #ccc; padding:10px;">The PIR sensor might detect pets or temperature changes. We can adjust its sensitivity and place it in a better location.</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #ccc; padding:10px;">Incorrect Distance Readings</td>
+        <td style="border:1px solid #ccc; padding:10px;">The ultrasonic sensor might give wrong readings because of obstacles. We can position it correctly and take several readings to improve accuracy.</td>
+      </tr>
+    </tbody>
+  </table>
 
-| Potential Problem | Possible Solution or Preventive Measure |
-|---|---|
-| **1. False Motion Detection** | The PIR sensor might detect movement from pets or temperature changes. We can place the sensor in a suitable location, adjust its sensitivity, and program the Arduino to confirm movement before giving an alert. |
-| **2. Incorrect Distance Readings** | The ultrasonic sensor might give wrong measurements because of obstacles or its position. We can place it facing the area we want to measure and take several readings to calculate an average. |
+  <h3>Conclusion</h3>
+  <p>
+    For our project, the Arduino sensor-based system is the better
+    choice because it is cheaper, easier to build, and uses less
+    electricity. Most components can also be reused in future projects.
+  </p>
+</section>
 
-### Conclusion
 
-For our project, **Option 1 is the better choice** because it is cheaper, easier to build, and uses less electricity. The Arduino can work with ultrasonic and PIR sensors to detect activity without needing a camera or internet connection. Most components can also be reused for future projects.
   <section id="bom">
     <h2>Bill of Materials (BoM)</h2>
     <table>
