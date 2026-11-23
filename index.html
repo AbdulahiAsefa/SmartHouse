@@ -79,13 +79,16 @@
   </section>
 
 
+
 <section id="environment">
   <h2>Comparative Analysis of Technologies & Sustainability</h2>
 
   <p>
-    There are different ways to build a smart home security system.
-    We compared an Arduino sensor-based system with a camera-based
-    security system.
+    Our project is a Smart Home Automation System that automatically
+    controls lights and a fan. The lights turn on when the sensors
+    detect the required conditions, and the fan turns on when the
+    temperature gets too high. We compared an Arduino-based
+    automatic system with a traditional manual system.
   </p>
 
   <h3>Technology Comparison Table</h3>
@@ -94,40 +97,40 @@
     <thead>
       <tr style="background-color:#2e7d32; color:white;">
         <th style="border:1px solid #ccc; padding:12px;">Comparison</th>
-        <th style="border:1px solid #ccc; padding:12px;">Arduino with Ultrasonic and PIR Sensors</th>
-        <th style="border:1px solid #ccc; padding:12px;">Camera-Based Security System</th>
+        <th style="border:1px solid #ccc; padding:12px;">Option 1: Arduino Smart Home System</th>
+        <th style="border:1px solid #ccc; padding:12px;">Option 2: Traditional Manual System</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td style="border:1px solid #ccc; padding:10px;">How It Works</td>
-        <td style="border:1px solid #ccc; padding:10px;">Uses sensors to detect movement and measure distance.</td>
-        <td style="border:1px solid #ccc; padding:10px;">Uses a camera to monitor an area and detect activity.</td>
+        <td style="border:1px solid #ccc; padding:10px;">Uses sensors and Arduino to automatically control lights and a fan based on light levels, movement, and temperature.</td>
+        <td style="border:1px solid #ccc; padding:10px;">People manually turn lights and fans on or off using switches.</td>
       </tr>
       <tr>
         <td style="border:1px solid #ccc; padding:10px;">Advantages</td>
-        <td style="border:1px solid #ccc; padding:10px;">Cheap, easy to build, uses less electricity, and protects privacy.</td>
-        <td style="border:1px solid #ccc; padding:10px;">Records video and provides more details about activity.</td>
+        <td style="border:1px solid #ccc; padding:10px;">Saves electricity, works automatically, and makes the home more comfortable.</td>
+        <td style="border:1px solid #ccc; padding:10px;">Simple to install, cheaper to set up, and easy to use.</td>
       </tr>
       <tr>
         <td style="border:1px solid #ccc; padding:10px;">Disadvantages</td>
-        <td style="border:1px solid #ccc; padding:10px;">Limited detection range and cannot identify people.</td>
-        <td style="border:1px solid #ccc; padding:10px;">More expensive and may require internet or storage.</td>
+        <td style="border:1px solid #ccc; padding:10px;">Needs programming, sensors, and more wiring. Sensor errors may affect the system.</td>
+        <td style="border:1px solid #ccc; padding:10px;">People may forget to turn off lights or fans, which wastes electricity.</td>
       </tr>
       <tr>
         <td style="border:1px solid #ccc; padding:10px;">Sustainability</td>
-        <td style="border:1px solid #ccc; padding:10px;">Uses less electricity and has reusable components.</td>
-        <td style="border:1px solid #ccc; padding:10px;">Uses more electricity and may need extra electronic devices.</td>
+        <td style="border:1px solid #ccc; padding:10px;">Can reduce wasted electricity by turning lights and fans on only when needed. Components can be reused.</td>
+        <td style="border:1px solid #ccc; padding:10px;">Uses fewer electronic parts but may waste more electricity if devices are left running.</td>
       </tr>
       <tr>
         <td style="border:1px solid #ccc; padding:10px;">Cost</td>
-        <td style="border:1px solid #ccc; padding:10px;">Low</td>
-        <td style="border:1px solid #ccc; padding:10px;">High</td>
+        <td style="border:1px solid #ccc; padding:10px;">Higher starting cost because of the Arduino and sensors.</td>
+        <td style="border:1px solid #ccc; padding:10px;">Lower starting cost because it uses basic switches.</td>
       </tr>
       <tr>
         <td style="border:1px solid #ccc; padding:10px;">Best Use</td>
-        <td style="border:1px solid #ccc; padding:10px;">Small rooms, entrances, and simple home security.</td>
-        <td style="border:1px solid #ccc; padding:10px;">Homes and buildings that need video monitoring.</td>
+        <td style="border:1px solid #ccc; padding:10px;">Homes that need automatic lighting and temperature control.</td>
+        <td style="border:1px solid #ccc; padding:10px;">Homes that only need simple manual controls.</td>
       </tr>
     </tbody>
   </table>
@@ -138,28 +141,32 @@
     <thead>
       <tr style="background-color:#2e7d32; color:white;">
         <th style="border:1px solid #ccc; padding:12px;">Design Problem</th>
-        <th style="border:1px solid #ccc; padding:12px;">Possible Solution</th>
+        <th style="border:1px solid #ccc; padding:12px;">Possible Solution or Preventive Measure</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td style="border:1px solid #ccc; padding:10px;">False Motion Detection</td>
-        <td style="border:1px solid #ccc; padding:10px;">The PIR sensor might detect pets or temperature changes. We can adjust its sensitivity and place it in a better location.</td>
+        <td style="border:1px solid #ccc; padding:10px;">1. Lights Turning On or Off Incorrectly</td>
+        <td style="border:1px solid #ccc; padding:10px;">The light or motion sensor might give incorrect readings. We can adjust the sensor position and set proper values in the Arduino code to prevent unnecessary switching.</td>
       </tr>
       <tr>
-        <td style="border:1px solid #ccc; padding:10px;">Incorrect Distance Readings</td>
-        <td style="border:1px solid #ccc; padding:10px;">The ultrasonic sensor might give wrong readings because of obstacles. We can position it correctly and take several readings to improve accuracy.</td>
+        <td style="border:1px solid #ccc; padding:10px;">2. Fan Not Responding to Temperature Changes</td>
+        <td style="border:1px solid #ccc; padding:10px;">The temperature sensor might give incorrect readings, or the fan might not turn on at the correct temperature. We can test the sensor, check the wiring, and set a suitable temperature limit in the Arduino code.</td>
       </tr>
     </tbody>
   </table>
 
   <h3>Conclusion</h3>
   <p>
-    For our project, the Arduino sensor-based system is the better
-    choice because it is cheaper, easier to build, and uses less
-    electricity. Most components can also be reused in future projects.
+    For our project, the Arduino Smart Home System is the better
+    choice because it can control the lights and fan automatically.
+    It helps save electricity by turning devices on only when needed.
+    Even though it costs more to build, it is more convenient and
+    can reduce energy waste. The Arduino and sensors can also be
+    reused in future projects.
   </p>
 </section>
+
 
 
   <section id="bom">
