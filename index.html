@@ -91,6 +91,33 @@
     </ul>
   </section>
 
+  ## Comparative Analysis of Technologies & Sustainability
+
+**Project: Arduino Smart Home Security and Monitoring System**
+
+There are different ways to build a smart home security system. For this project, we compared an Arduino sensor-based system with a camera-based security system.
+
+### Technology Comparison Table
+
+| Comparison | Option 1: Arduino with Ultrasonic and PIR Sensors | Option 2: Camera-Based Security System |
+|---|---|---|
+| **How it works** | Uses sensors to detect movement and measure distance. | Uses a camera to monitor an area and detect activity. |
+| **Advantages** | Low cost, easy to build, uses less electricity, and does not record people. | Can record video, provide more details, and help identify what caused an alert. |
+| **Disadvantages** | Cannot show who is moving, and sensors have limited detection ranges. | More expensive, uses more electricity, and may need internet or storage. |
+| **Sustainability** | Uses less energy and fewer electronic components. Parts can be reused in other projects. | Uses more energy and may require extra storage devices, but some equipment can be reused. |
+| **Cost** | Generally cheaper. | Generally more expensive. |
+| **Best Use** | Small rooms, entrances, and simple home security projects. | Homes or buildings that need video monitoring. |
+
+### Two Potential Design Problems and Solutions
+
+| Potential Problem | Possible Solution or Preventive Measure |
+|---|---|
+| **1. False Motion Detection** | The PIR sensor might detect movement from pets or temperature changes. We can place the sensor in a suitable location, adjust its sensitivity, and program the Arduino to confirm movement before giving an alert. |
+| **2. Incorrect Distance Readings** | The ultrasonic sensor might give wrong measurements because of obstacles or its position. We can place it facing the area we want to measure and take several readings to calculate an average. |
+
+### Conclusion
+
+For our project, **Option 1 is the better choice** because it is cheaper, easier to build, and uses less electricity. The Arduino can work with ultrasonic and PIR sensors to detect activity without needing a camera or internet connection. Most components can also be reused for future projects.
   <section id="bom">
     <h2>Bill of Materials (BoM)</h2>
     <table>
